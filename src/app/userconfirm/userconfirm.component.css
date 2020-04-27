@@ -1,0 +1,12 @@
+.confirm {
+  background-color: rgb(255, 136, 0);
+  padding: 3%;
+}
+
+.confirm .row {
+  padding: 2%;
+}
+
+.container {
+  margin-top: 40px;
+}

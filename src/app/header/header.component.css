@@ -1,0 +1,10 @@
+.header {
+   width: 100%;
+   background-color: greenyellow;
+   padding: 2%;
+   color: black;
+}
+
+.header h1{
+  text-align: center;
+}

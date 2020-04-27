@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mrgnbtm">
+      <h2><app-message message="createUser"></app-message></h2>
+      <alert *ngIf="isFormInvalid" type="danger">
+        <app-message message="errorMessage"></app-message>
+      </alert>
+      <form [formGroup]="userForm" id="userform" (ngSubmit)="onSubmit()">
+        <div class="row mrgnbtm"><h4><app-message message="personalInformation"></app-message></h4></div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="exampleInputEmail1"><app-message message="personalInformation"></app-message></label>
+            <input type="text" class="form-control" formControlName="firstName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleInputPassword1"><app-message message="personalInformation"></app-message></label>
+            <input type="text" class="form-control" formControlName="lastName" id="exampleInputPassword1" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="exampleInputEmail1"><app-message message="personalInformation"></app-message></label>
+            <input type="text" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          </div>
+        </div>
+        <div class="row mrgnbtm"><h4><app-message message="address"></app-message></h4></div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="exampleInputEmail1"><app-message message="streetNumber"></app-message></label>
+            <input type="text" class="form-control" formControlName="streetNumber" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Street Number">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleInputEmail1"><app-message message="streetName"></app-message></label>
+            <input type="text" class="form-control" formControlName="streetName" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Street Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="exampleInputEmail1"><app-message message="city"></app-message></label>
+            <input type="text" class="form-control" formControlName="city" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="city">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="exampleInputEmail1"><app-message message="state"></app-message></label>
+            <input type="text" class="form-control" formControlName="state" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="state">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="exampleInputEmail1"><app-message message="zipcode"></app-message></label>
+            <input type="text" class="form-control" formControlName="zipcode" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="zipcode">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-danger">Create</button>
+      </form>
+    </div>
+    </div>
+</div>
